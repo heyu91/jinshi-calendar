@@ -41,11 +41,11 @@ def get_ics(start=None, end=None):
         end = int(time.mktime(time.strptime(end, '%Y%m%d')))
 
     if start is None and end is None:
-        start = int(time.time()) - ONEWEEK * 2
-        end = int(time.time()) + ONEWEEK * 6
+        start = int(time.time()) - ONEWEEK * 4
+        end = int(time.time()) + ONEWEEK * 8
     else:
-        start = start or end - ONEWEEK * 2
-        end = end or start + ONEWEEK * 2
+        start = start or end - ONEWEEK * 4
+        end = end or start + ONEWEEK * 4
 
     def format_title(event):
         return "[{star:<3s}{country:s}]{title:s}".format(
