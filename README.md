@@ -1,7 +1,7 @@
-# Flask-getting-started
+# wallstreetcn-calendar
 
-一个简单的使用 Flask 的 Python 应用。
-可以运行在 LeanEngine Python 运行时环境。
+通过华尔街见闻的api获取日历，生成ics文件
+[示例](http://wallstreetcn.leanapp.cn/calendar.ics)
 
 ## 本地运行
 
@@ -15,8 +15,8 @@
 首先确认本机已经安装 [Python](http://python.org/) 运行环境和 [LeanCloud 命令行工具](https://www.leancloud.cn/docs/leanengine_cli.html)，然后执行下列指令：
 
 ```
-$ git clone git@github.com:leancloud/python-getting-started.git
-$ cd python-getting-started
+$ git clone git@github.com:heyu91/wallstreetcn-calendar.git
+$ cd wallstreetcn-calendar
 ```
 
 ### 安装依赖：
