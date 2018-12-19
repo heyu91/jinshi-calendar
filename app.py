@@ -8,6 +8,7 @@ import asyncio
 import async_timeout
 from urllib import parse
 from itertools import chain
+from collections import deque
 from ics import Calendar, Event
 
 from flask import Flask, request
@@ -98,7 +99,7 @@ def get_ics(start=None, end=None):
 
         c.events.add(e)
 
-    list(map(add_event, events))
+    deque(map(add_event, events), maxlen=0)
 
     return c
 
