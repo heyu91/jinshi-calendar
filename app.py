@@ -90,7 +90,7 @@ def get_ics(start=None, end=None):
 
     def add_event(event):
         e = Event()
-        e.uid = str(event.get('id'))
+        e.uid = str(event.get('calendar_key', event.get('id')))
         e.name = format_title(event)
         e.begin = event.get('timestamp', time.time())
         e.end = event.get('timestamp', time.time())
